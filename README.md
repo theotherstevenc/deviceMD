@@ -1,2 +1,2 @@
 # Device MD
-(c) dec 2014 -- email user agent detector + dynamic for emails. developed by steven.c
+(c) dec 2014 -- email user agent detector + for creating dynamic content in emails. developed by steven.c
