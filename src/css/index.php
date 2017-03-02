@@ -3,14 +3,17 @@ header("Content-type: text/css; charset: UTF-8");
 
 echo " /* dec 2014 -- email user agent detector: a dynamic stylesheet for emails. developed by steven.c */ ";
 
-$user_agent =    $_SERVER['HTTP_USER_AGENT'];
-$client     =    $_SERVER['HTTP_REFERER'];
+$user_agent =    $_SERVER['HTTP_USER_AGENT']; //assign user agent (aka device) to variable
+$client     =    $_SERVER['HTTP_REFERER'];    //assign location reference to determine client if possible
 
+// create function
 function getOS() {
 
-  global $user_agent;
-  $os_platform =   "UnknownOS";
-  $os_array    =   array(
+  global $user_agent; //set as global to allow access outside of the function
+  $os_platform =   "UnknownOS"; //set intial value for basic default (not used)
+  $os_array    =   [
+  // use lowercase i to match uppercase and lowercase
+  // delimiter of choice is the forward slash
   '/windows nt 6.2/i'     =>  'Windows 8',
   '/windows nt 6.1/i'     =>  'Windows 7',
   '/windows nt 6.0/i'     =>  'Windows Vista',
@@ -32,18 +35,18 @@ function getOS() {
   '/android/i'            =>  'Android',
   '/blackberry/i'         =>  'BlackBerry',
   '/webos/i'              =>  'Mobile'
-  );
+  ];
 
-  foreach ($os_array as $regex => $value) {
-    if (preg_match($regex, $user_agent)) {
-      $os_platform    =   $value;
+  foreach ($os_array as $regex => $value) { //loop through the array, assign the KEY value to $regex, and assign the VALUE to $value
+    if (preg_match($regex, $user_agent)) { //look for $regex (KEY in the array) in the $useragent
+      $os_platform    =   $value; //if there is a match, assign the array VALUE to $os_platform
     }
   }
 
-  return $os_platform;
+  return $os_platform; //assign value to the function - should be a VALUE from the array
 }
 
-$user_os = getOS();
+$user_os = getOS(); //assign the i
 
 if ($user_os == "iPhone") {
 echo
