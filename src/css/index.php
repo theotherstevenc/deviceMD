@@ -46,7 +46,7 @@ function getOS() {
   return $os_platform; //assign value to the function - should be a VALUE from the array
 }
 
-$user_os = getOS(); //assign the i
+$user_os = getOS(); //assign the result of the function to $user_os
 
 if ($user_os == "iPhone") {
 echo
