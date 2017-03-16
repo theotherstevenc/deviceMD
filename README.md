@@ -3,14 +3,14 @@ a simple email user agent detector + for creating dynamic content in emails. dev
 
 <img src="https://raw.githubusercontent.com/theotherstevenc/deviceMD/master/device-md.png" width="200"/>
 
-`index.php` will act as the `css` file, and generate styles based on the user agent
+`index.php` will act as the `css` file, and generate styles based on the user agent, and must be saved on a [`php`](https://en.wikipedia.org/wiki/PHP) enabled web server
 
-reference the generated `css` as an external stylesheet in the `html`
-`<link rel="stylesheet" type="text/css" href="http://exaple.com/css/">`
+Reference the generated `css` as an external stylesheet in the `html`
+> `<link rel="stylesheet" type="text/css" href="http://exaple.com/css/">`
 
-on desired elements throughout the `html`, use the `css` class names below to render content specific to the device
+On desired elements throughout the `html`, use the `css` class names below to render content specific to the device
 - `.ios` renders on iphone/ipad
 - `.droid` renders on android
 - `.default` renders default content
 
-the example `html` incorporates a minimal `div` layout to illustrate the technique.
+The example `html` incorporates a minimal `div` layout to illustrate the technique.
