@@ -23,4 +23,4 @@ currently this is limited to rendering content specific to devices, but can be e
 - updated registery for gatherings
 - your idea here
 
-> If add some interactivity into emails, with a side dish of dynamic content - we can start to create a sense of email anticipation
+> add some interactivity into emails, with a side dish of dynamic content, and we can start to create anticipation
