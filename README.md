@@ -15,3 +15,12 @@ On desired elements throughout the `html`, use the `css` class names below to re
 
 The example `html` incorporates a minimal `div` layout to illustrate the technique.<br>
 View the example on GitHub and change user-agents with a browser extension to see content change: [https://github.com/theotherstevenc/deviceMD/blob/master/src/index.html](http://htmlpreview.github.io/?https://github.com/theotherstevenc/deviceMD/blob/master/src/index.html)
+
+currently this is limited to rendering content specific to devices, but can be expanded on to incorporate different scenarios, and use cases.
+- time of day: lot's of variables to take into account
+- time of open: in reference to time of send. ex: update urgent messaging to something more delicate    
+- day of open: update content if a monday email is not opened until friday
+- updated registery for gatherings
+- your idea here
+
+> If add some interactivity into emails, with a side dish of dynamic content - we can start to create a sense of email anticipation
