@@ -15,3 +15,5 @@ currently this is limited to rendering content specific to devices, but can be e
 - your idea here
 
 > add some interactivity into emails, with a side dish of dynamic content, and we can start to create anticipation
+
+`Will be adding a version written for node.js soon`
